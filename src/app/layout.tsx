@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   themeColor: '#efc7c5',
   appleWebApp: { title: 'Deseo Mágico' },
   twitter: { title: 'Deseo Mágico - Cursos 100% online.', card: 'summary_large_image', site: 'Deseo Mágico', creator: '@florenciawilh', images: '/icon.png', description: 'Deseo Mágico - Cursos 100% online.' },
-  openGraph: { title: 'Deseo Mágico - Cursos 100% online.', type: 'website', images: [{ url: '/icon.png' }], url: '', description: 'Deseo Mágico - Cursos 100% online.', locale: 'es_ES', siteName: 'Deseo Mágico' }
+  openGraph: { title: 'Deseo Mágico - Cursos 100% online.', type: 'website', images: [{ url: '/icon.png' }], url: 'https://deseo-magico.vercel.app/', description: 'Deseo Mágico - Cursos 100% online.', locale: 'es_ES', siteName: 'Deseo Mágico' }
 }
 
 export default function RootLayout ({
