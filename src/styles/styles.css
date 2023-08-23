@@ -1,0 +1,343 @@
+html {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: var(--font-arimo);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 24px;
+}
+
+.navbar-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  z-index: 100;
+  margin: 1rem;
+  padding: 0 1rem;
+  border-radius: 5rem;
+  background-color: #efc7c5;
+  border: 2px solid #ffffff;
+}
+
+.navbar-header .navbar-aside {
+  width: auto;
+  height: auto;
+}
+
+.navbar-header .navbar-aside img {
+  width: 45px;
+  height: auto;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.navbar-header button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+}
+
+.navbar-header .navbar-nav {
+  width: 100%;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+  transition: transform 200ms ease-in-out;
+  transform: translateY(100%);
+  background-color: transparent;
+}
+
+.navbar-header .navbar-nav.is-active {
+  transform: translateY(0);
+}
+
+.navbar-header .navbar-nav ul {
+  width: 90%;
+  height: 100%;
+  border-radius: 1rem;
+  margin: 6rem auto 1rem auto;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  background-color: #efc7c5;
+}
+
+.navbar-header .navbar-nav ul a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.main-title img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  z-index: 98;
+}
+
+.main-title div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 98;
+}
+
+.main-title h1 {
+  position: relative;
+  margin-top: 1rem;
+  z-index: 99;
+  font-size: 2.5rem;
+  line-height: 60px;
+  letter-spacing: -1px;
+  font-weight: 900;
+  font-family: var(--font-playfairDisplay), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+}
+
+.main-title h1 span {
+  -webkit-text-stroke: 0.5px #000000;
+  background-color: #efc7c5;
+  padding: 0 1rem;
+  border-radius: 5rem;
+  color: #ffffff;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0rem 1rem;
+}
+
+.title {
+  background-color: #000000;
+  padding: 0.5rem 0;
+  border-radius: 5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.btn-container p {
+  font-weight: bold;
+}
+
+.btn-container p span {
+  display: block;
+  color: #ff6beb;
+}
+
+.btn {
+  font-size: 1rem;
+  background-color: #ff6beb;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5rem;
+  padding: 1rem 0;
+  width: 80%;
+  text-decoration: none;
+}
+
+#resin {
+  margin-top: 6rem;
+}
+
+#resin article ul {
+  line-height: 30px;
+}
+
+#resin article ul li {
+  color: #ff6beb;
+  font-weight: bold;
+}
+
+#why-is-it-for-you ul {
+  line-height: 30px;
+}
+
+#why-is-it-for-you ul li {
+  color: #ff6beb;
+  font-weight: bold;
+}
+
+#course-program {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#resin,
+#why-is-it-for-you,
+#course-program,
+#testimonials,
+#contact {
+  scroll-margin-top: 6rem;
+}
+
+.footer {
+  background-color: #efc7c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.footer picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.footer .footer-info p {
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .footer-contact .footer-contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
+.footer .footer-contact .footer-contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  gap: 0.5rem;
+  color: #ff6beb;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.footer .creator {
+  width: 100%;
+  margin: 3rem auto 0 auto;
+  padding: 0;
+}
+
+.footer .creator span {
+  width: 100%;
+  display: block;
+}
+
+.footer .creator span a {
+  color: #ff6beb;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.carousel-container {
+  display: flex;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #efc7c5;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.carousel-container .carousel-btns {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-container .carousel-btns button {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
